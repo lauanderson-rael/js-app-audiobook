@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Player music</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <div class="container-aplicativo">
+        <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ10zHm05lOUNpDXROAPqWvtewYpiou_71hJInf28ZVPQ2XmlvO7edP8Wn2ectmka-DNog&usqp=CAU" alt="" />
+        
+        <div id="informacoes-faixa">
+            <p style="color: yellow;" id="capitulo">Capítulo 1</p>
+            <p id="nome-autor">Machado de Assis</p>
+        </div>
+
+        <audio id="audio-capitulo" src="./books/dom-casmurro/1.mp3"></audio>
+        
+        <div class="time" id="tempo">
+          <span id="tempo-atual">0:00</span> / <span id="tempo-total">0:00</span>
+        </div>
+
+        <div id="container-botoes">
+            <button id="anterior" class="bi bi-skip-backward-fill"></button>
+            <button id="play-pause" class="bi bi-play-circle-fill"></button>
+            <button id="proximo" class="bi bi-skip-forward-fill"></button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
